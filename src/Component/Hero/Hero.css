@@ -1,0 +1,30 @@
+.hero-section {
+    width: 100%;
+    height: 455px;
+    position: relative;
+}
+
+.hero-section img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-section .over-lay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0b2d9c;
+    opacity: .8;
+    z-index: 1;
+}
+
+.hero-section .content {
+    position: absolute;
+    padding: 80px 0px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    z-index: 2;
+}

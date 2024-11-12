@@ -52,12 +52,12 @@ nav .navbar-brand {
     font-family: "Josefin Sans", sans-serif;
 }
 
-.btn-cart{
+.btn-cart {
     margin-left: 15px;
 }
 
-.btn-cart .badge{
-    background-color: rgb(252, 108, 24)!important;
+.btn-cart .badge {
+    background-color: rgb(252, 108, 24) !important;
     font-size: 12px;
     font-family: "Josefin Sans", sans-serif;
 }
@@ -153,14 +153,16 @@ nav .navbar-brand {
     .menu-toggle.active .bar:nth-child(3) {
         transform: translateY(-11px) rotate(-45deg);
     }
-    .myBtn{
+
+    .myBtn {
         margin-top: -10px;
     }
-    .btn-cart{
+
+    .btn-cart {
         text-align: center;
         display: flex;
         justify-content: center;
-        margin-left: 0px!important;
+        margin-left: 0px !important;
         margin-top: 14px;
     }
 }

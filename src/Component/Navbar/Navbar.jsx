@@ -13,10 +13,10 @@ const Navbar = () => {
     <div>
       <nav className="navbar navbar-expand-lg shadow-sm">
         <div className="container">
-          <a href="#" className="navbar-brand" to="/">
+          <Link to="/" className="navbar-brand">
             MyShop
             <i class="bi bi-basket"></i>
-          </a>
+          </Link>
           <div
             className={`menu-toggle ${isOpen ? "active" : ""}`}
             type="button"
@@ -34,39 +34,43 @@ const Navbar = () => {
           >
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a href="#" className="nav-link">
+                <Link to="/" className="nav-link">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">
+                <Link to="/" className="nav-link">
                   Shop
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">
+                <Link to="/fruits" className="nav-link">
                   Fruits
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">
+                <Link to="/vegetables" className="nav-link">
                   Vegetables
-                </a>
+                </Link>
               </li>
             </ul>
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li>
-                <button type="button" className="myBtn">
-                  Login
-                </button>
+                <Link to="/login">
+                  <button type="button" className="myBtn">
+                    Login
+                  </button>
+                </Link>
               </li>
               <li className="btn-cart">
-                <button type="button" class="nav-link position-relative">
-                  <i className="bi bi-cart"></i>
-                  <span class="position-absolute top-10 start-100 translate-middle badge rounded-pill bg-danger">
-                    0
-                  </span>
-                </button>
+                <Link to="/cart">
+                  <button type="button" class="nav-link position-relative">
+                    <i className="bi bi-cart"></i>
+                    <span class="position-absolute top-10 start-100 translate-middle badge rounded-pill bg-danger">
+                      0
+                    </span>
+                  </button>
+                </Link>
               </li>
             </ul>
           </div>
