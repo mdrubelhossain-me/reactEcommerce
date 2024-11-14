@@ -5,6 +5,7 @@ import Offers from '../Component/Offers/Offers';
 import NewCollection from '../Component/NewCollection/NewCollection';
 import NewsLetter from '../Component/NewsLetter/NewsLetter';
 
+
 const Shop = () => {
     return (
         <div>
