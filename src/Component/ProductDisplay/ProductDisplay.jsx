@@ -56,12 +56,12 @@ const ProductDisplay = (props) => {
               nobis veniam sequi numquam officia quis.
             </p>
             <div className="weight">
-              <h6>Weight</h6>
-              <span>1kg</span>
-              <span>1.5kg</span>
-              <span>2kg</span>
-              <span>2.5kg</span>
-              <span>5kg</span>
+              <h6>Weight (in Kg)</h6>
+              <span>1</span>
+              <span>1.5</span>
+              <span>2</span>
+              <span>2.5</span>
+              <span>5</span>
             </div>
             <div>
               <button type="button" className="myBtn m-0">

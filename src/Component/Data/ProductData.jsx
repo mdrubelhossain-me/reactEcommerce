@@ -21,7 +21,7 @@ const productsData = [
   {
     id: 1,
     imgSrc: p1,
-    name: "Fresh Organic Apple",
+    name: "Juicy Apples - A Healthy, Delicious Anytime Snack",
     category: "fruits",
     // icon: "bi-geo-alt",
     newPrice: 100.0,
@@ -30,15 +30,15 @@ const productsData = [
   {
     id: 2,
     imgSrc: p2,
-    name: "Fresh Cucumber",
+    name: "Fresh Cucumbers -  Refreshing, and Naturally Sweet",
     category: "vegetables",
     newPrice: 80.0,
     oldPrice: 110.0,
   },
   {
-    id: 4,
+    id: 3,
     imgSrc: p3,
-    name: "Fresh Grapes",
+    name: "Sweet, Juicy Grapes - Nature's Perfect Bite-Sized Delight",
     category: "fruits",
     newPrice: 280.0,
     oldPrice: 310.0,
@@ -46,7 +46,7 @@ const productsData = [
   {
     id: 4,
     imgSrc: p4,
-    name: "Fresh Cucumber",
+    name: "Fresh Cauliflower - Naturally Fresh and Flavorful",
     category: "vegetables",
     newPrice: 80.0,
     oldPrice: 110.0,
@@ -54,7 +54,7 @@ const productsData = [
   {
     id: 5,
     imgSrc: p5,
-    name: "Fresh Banana",
+    name: "Fresh Bananas - Sweet, Creamy, and Perfectly Ripe",
     category: "fruits",
     newPrice: 40.0,
     oldPrice: 50.0,
@@ -62,7 +62,7 @@ const productsData = [
   {
     id: 6,
     imgSrc: p6,
-    name: "Fresh Potato",
+    name: "Fresh Potatoes - Firm, Flavorful, and Perfect for Any Dish",
     category: "vegetables",
     newPrice: 40.0,
     oldPrice: 50.0,
@@ -70,7 +70,7 @@ const productsData = [
   {
     id: 7,
     imgSrc: p7,
-    name: "Egg",
+    name: "Fresh Eggs - Grade A, Perfectly Sized and Nutritious",
     category: "vegetables",
     newPrice: 50.0,
     oldPrice: 60.0,
@@ -78,7 +78,7 @@ const productsData = [
   {
     id: 8,
     imgSrc: p8,
-    name: "Orange",
+    name: "Juicy Oranges - Sweet, Tangy, and Full of Vitamin C",
     category: "fruits",
     newPrice: 250.0,
     oldPrice: 260.0,
@@ -86,7 +86,7 @@ const productsData = [
   {
     id: 9,
     imgSrc: p9,
-    name: "Carrots",
+    name: "Sweet Carrots - Farm Fresh and Full of Vitamins",
     category: "vegetables",
     newPrice: 70.0,
     oldPrice: 60.0,
@@ -94,7 +94,7 @@ const productsData = [
   {
     id: 10,
     imgSrc: p10,
-    name: "Fresh Lemon",
+    name: "Fresh Lemons - Zesty, Juicy, and Bursting with Flavor",
     category: "vegetables",
     newPrice: 90.0,
     oldPrice: 70.0,
@@ -102,7 +102,7 @@ const productsData = [
   {
     id: 11,
     imgSrc: p11,
-    name: "Pineapple",
+    name: "Fresh Pineapple - Sweet, Juicy, and Tropical Delight",
     category: "fruits",
     newPrice: 50.0,
     oldPrice: 40.0,
@@ -110,7 +110,7 @@ const productsData = [
   {
     id: 12,
     imgSrc: p12,
-    name: "Strawberry",
+    name: "Juicy Red Strawberries - Fresh from the Farm",
     category: "fruits",
     newPrice: 70.0,
     oldPrice: 60.0,
@@ -118,7 +118,7 @@ const productsData = [
   {
     id: 13,
     imgSrc: p13,
-    name: "Fresh Tomato",
+    name: "Organic Tomatoes - Garden Fresh and Flavorful",
     category: "vegetables",
     newPrice: 80.0,
     oldPrice: 65.0,
@@ -126,7 +126,7 @@ const productsData = [
   {
     id: 14,
     imgSrc: p14,
-    name: "Watermelon",
+    name: "Cool Watermelon - Perfect for Summer's Sweetest Moments",
     category: "fruits",
     newPrice: 150.0,
     oldPrice: 140.0,
@@ -134,7 +134,7 @@ const productsData = [
   {
     id: 15,
     imgSrc: p15,
-    name: "Organic Mango",
+    name: "Fresh Mangoes - Nature's Sweetest, Juiciest Delight",
     category: "fruits",
     newPrice: 130.0,
     oldPrice: 110.0,
@@ -142,7 +142,7 @@ const productsData = [
   {
     id: 16,
     imgSrc: p16,
-    name: "Potol",
+    name: "Fresh Potol - Naturally Fresh and Flavorful",
     category: "vegetables",
     newPrice: 60.0,
     oldPrice: 50.0,

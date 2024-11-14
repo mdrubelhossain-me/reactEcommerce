@@ -25,7 +25,7 @@ const popularProducts = [
     oldPrice: 110.0,
   },
   {
-    id: 4,
+    id: 3,
     imgSrc: p3,
     name: "Sweet, Juicy Grapes - Nature's Perfect Bite-Sized Delight",
     category: "fruits",
