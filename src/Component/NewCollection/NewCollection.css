@@ -1,4 +1,4 @@
-.card-container {
+.nw-card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
@@ -9,7 +9,7 @@
 }
 
 .line{
-    width: 140px;
+    width: 120px;
     height: 3px;
     border: none;
     background-color: rgb(252, 108, 24);
@@ -17,7 +17,7 @@
 }
 
 @media (max-width: 768px) {
-    .card-container {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    .nw-card-container {
+        grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
     }
 }

@@ -4,7 +4,7 @@ import p1 from "../../assets/images/products/apple.png";
 import p2 from "../../assets/images/products/orange.png";
 import p3 from "../../assets/images/products/grapes.png";
 import p4 from "../../assets/images/products/watermelon.png";
-
+import p5 from "../../assets/images/products/strawberry.png";
 
 const popularProducts = [
   {
@@ -25,7 +25,7 @@ const popularProducts = [
     oldPrice: 110.0,
   },
   {
-    id: 4,
+    id: 3,
     imgSrc: p3,
     name: "Sweet, Juicy Grapes - Nature's Perfect Bite-Sized Delight",
     category: "fruits",
@@ -40,7 +40,6 @@ const popularProducts = [
     newPrice: 80.0,
     oldPrice: 110.0,
   },
-
 ];
 
 export default popularProducts;

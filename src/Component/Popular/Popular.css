@@ -8,8 +8,10 @@
     /* Center align items */
 }
 
-.line{
-    width: 140px;
+
+
+.line {
+    width: 120px;
     height: 3px;
     border: none;
     background-color: rgb(252, 108, 24);
@@ -18,6 +20,6 @@
 
 @media (max-width: 768px) {
     .card-container {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
     }
 }

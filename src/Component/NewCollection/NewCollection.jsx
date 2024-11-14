@@ -9,7 +9,7 @@ const NewCollection = () => {
         <div className="container">
           <h2 className="text-center">New Collection</h2>
           <div className="line"></div>
-          <div className="card-container">
+          <div className="nw-card-container">
             {newCollection_Data.map((item, i) => (
               <Items
                 key={i}

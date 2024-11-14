@@ -22,7 +22,7 @@
 }
 
 .item-section .card .p-photo img {
-    width: 100%;
+    width: 60%;
     height: 100%;
     object-fit: contain;
     border-top-left-radius: 6px;
@@ -45,4 +45,17 @@
 
 .item-section .card .card-body p del {
     opacity: .8;
+}
+
+
+@media (max-width: 768px) {
+    .item-section .card .p-photo {
+        width: 100%;
+        height: 140px;
+    }
+
+    .item-section .card .p-photo img {
+        width: 70%;
+        height: 100%;
+    }
 }
