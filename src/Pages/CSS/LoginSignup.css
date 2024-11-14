@@ -1,0 +1,103 @@
+.login-section{
+    background-color: rgb(235, 235, 235);
+}
+.login-section .login-form-body {
+    padding: 35px 30px 25px 30px;
+    background-color: white;
+    border: 1px solid rgb(252, 230, 209);
+    font-family: "Josefin Sans", sans-serif;
+    border-radius: 6px;
+
+}
+
+.login-section .logo {
+    display: block;
+    color: rgba(255, 128, 70);
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 22px;
+}
+
+ .login-section .logo .bi-basket {
+    display: block;
+    margin: auto;
+    font-size: 14px;
+    color: rgba(255, 128, 70);
+    margin-top: -52px;
+}
+
+.login-section .login-form-body form label {
+    font-size: 14px;
+    color: black;
+    opacity: .7;
+}
+
+.login-section .login-form-body form input {
+    font-size: 14px;
+    padding: 10px 16px;
+    opacity: .8;
+}
+
+.login-section .login-form-body form input:focus {
+    border-color: rgba(255, 128, 70);
+    box-shadow: none !important;
+}
+
+.login-section .login-form-body form .link {
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    opacity: .6;
+}
+
+.login-section .login-form-body form .link:hover {
+    opacity: 1;
+    color: rgba(255, 128, 70);
+    text-decoration: underline;
+    transition: .6s;
+}
+
+.login-section .login-form-body form input.form-check-input {
+    padding: 0 !important;
+}
+
+.form-check-input:checked[type="checkbox"] {
+    background-color: rgba(255, 128, 70);
+}
+
+.password-show-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    background-color: transparent;
+    border: none;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: rgba(255, 128, 70);
+}
+
+.form-control{
+    padding-right: 32px!important;
+}
+
+
+@media (max-width: 768px) {
+    .form-control{
+        padding-right: 100%!important;
+    }
+    .input-group-append{
+        width: 20px!important;
+    }
+    .password-show-icon{
+        width: 20px!important;
+        right: -1%;
+    }
+    .form-check-input{
+        width: 15px!important;
+    }
+}
+

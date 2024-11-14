@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import p1 from "../../assets/images/bg1.jpg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -11,10 +12,10 @@ const Footer = () => {
         <div className="container">
           <div className="row g-4">
             <div className="col-lg-3 col-md-4 col-sm-12 f-widget">
-              <a className="logo text-uppercase" href="#">
+              <Link className="logo text-uppercase" to='/'>
                 MyShop
                 <i class="bi bi-basket"></i>
-              </a>
+              </Link>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
                 aperiam labore omnis quod laboriosam nisi obcaecati, molestiae

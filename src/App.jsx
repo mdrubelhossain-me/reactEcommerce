@@ -7,6 +7,9 @@ import Product from './Pages/Product';
 import Cart from './Pages/Cart';
 import LoginSignup from './Pages/LoginSignup';
 import Footer from "./Component/Footer/Footer";
+import fBanner from './assets/images/hero.jpg'
+import vBanner from './assets/images/vBanner2.jpg'
+import BackToTopButton from "./Component/BackToTop/BackToTopButton";
 
 
 function App() {
@@ -16,8 +19,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Shop />}></Route>
-          <Route path="/fruits" element={<ShopCategory category="fruits" />}></Route>
-          <Route path="/vegetables" element={<ShopCategory category="vegetables" />}></Route>
+          <Route path="/fruits" element={<ShopCategory banner={fBanner} category="fruits" />}></Route>
+          <Route path="/vegetables" element={<ShopCategory banner={vBanner} category="vegetables" />}></Route>
           <Route path="/product" element={<Product/>}>
               <Route path=":productId"  element={<Product/>} />
           </Route>
@@ -25,6 +28,7 @@ function App() {
           <Route path="/login" element={<LoginSignup/>} ></Route>
         </Routes>
         <Footer/>
+        <BackToTopButton/>
       </BrowserRouter>
     </div>
   );

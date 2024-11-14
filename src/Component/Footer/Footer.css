@@ -165,3 +165,17 @@
 .ex-footer p a {
     color: white;
 }
+
+
+@media (max-width: 991px) {
+    .footer-section {
+        height: 750px;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-section {
+        height: 850px;
+    }
+}
