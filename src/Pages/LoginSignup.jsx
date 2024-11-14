@@ -29,26 +29,21 @@ const LoginSignup = () => {
               <div className="mb-3 text-center">
                 <p>
                   Please Login, or{" "}
-                  <Link to="/registration" style={{ color: "rgba(255, 128, 70)" }}>
+                  <Link
+                    to="/registration"
+                    style={{ color: "rgba(255, 128, 70)" }}
+                  >
                     Signup
                   </Link>
                 </p>
               </div>
               <form>
                 <div className="mb-3">
-                  <label className="form-label">
-                    Email address
-                  </label>
-                  <input
-                    type="email"
-                    className="form-control"
-                    required
-                  />
+                  <label className="form-label">Email address</label>
+                  <input type="email" className="form-control" required />
                 </div>
                 <div className="mb-3">
-                  <label className="form-label">
-                    Enter password
-                  </label>
+                  <label className="form-label">Enter password</label>
                   <div className="input-group">
                     <input
                       type="password"
@@ -78,13 +73,8 @@ const LoginSignup = () => {
                 </div>
                 <div className="mb-3">
                   <div className="form-check">
-                    <input
-                      className="form-check-input"
-                      type="checkbox"
-                    />
-                    <label className="form-check-label">
-                      Remember me
-                    </label>
+                    <input className="form-check-input" type="checkbox" />
+                    <label className="form-check-label">Remember me</label>
                   </div>
                 </div>
                 <div className="mb-3">
