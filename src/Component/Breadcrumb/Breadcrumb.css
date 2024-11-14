@@ -1,0 +1,9 @@
+.breadcrumb{
+    font-family: "Josefin Sans", sans-serif;
+}
+.breadcrumb p{
+    font-size: 15px;
+}
+.breadcrumb p i{
+    font-size: 12px;
+}

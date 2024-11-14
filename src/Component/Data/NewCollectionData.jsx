@@ -11,7 +11,7 @@ import p16 from "../../assets/images/products/potol.png";
 
 const newCollection_Data = [
   {
-    id: 1,
+    id: 9,
     imgSrc: p9,
     name: "Carrots",
     category: "vegetables",
@@ -19,7 +19,7 @@ const newCollection_Data = [
     oldPrice: 60.0,
   },
   {
-    id: 2,
+    id: 10,
     imgSrc: p10,
     name: "Fresh Lemon",
     category: "vegetables",
@@ -27,7 +27,7 @@ const newCollection_Data = [
     oldPrice: 70.0,
   },
   {
-    id: 3,
+    id: 11,
     imgSrc: p11,
     name: "Pineapple",
     category: "fruits",
@@ -35,7 +35,7 @@ const newCollection_Data = [
     oldPrice: 40.0,
   },
   {
-    id: 4,
+    id: 12,
     imgSrc: p12,
     name: "Strawberry",
     category: "fruits",
@@ -43,7 +43,7 @@ const newCollection_Data = [
     oldPrice: 60.0,
   },
   {
-    id: 5,
+    id: 13,
     imgSrc: p13,
     name: "Fresh Tomato",
     category: "vegetables",
@@ -51,7 +51,7 @@ const newCollection_Data = [
     oldPrice: 65.0,
   },
   {
-    id: 6,
+    id: 14,
     imgSrc: p14,
     name: "Watermelon",
     category: "fruits",
@@ -59,7 +59,7 @@ const newCollection_Data = [
     oldPrice: 140.0,
   },
   {
-    id: 7,
+    id: 15,
     imgSrc: p15,
     name: "Organic Mango",
     category: "fruits",
@@ -67,7 +67,7 @@ const newCollection_Data = [
     oldPrice: 110.0,
   },
   {
-    id: 8,
+    id: 16,
     imgSrc: p16,
     name: "Potol",
     category: "vegetables",

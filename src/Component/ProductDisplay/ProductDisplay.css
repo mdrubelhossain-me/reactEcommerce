@@ -1,0 +1,113 @@
+.product-display {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.product-display .sm-img-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.product-display .sm-img-section .sm-img {
+    height: 100px;
+    width: 90px;
+    border: none;
+    background-color: antiquewhite;
+    position: relative;
+}
+
+.product-display .sm-img-section .sm-img img {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: auto;
+    object-fit: contain;
+}
+
+.product-display .full-img {
+    width: 100%;
+    height: 432px;
+    background-color: antiquewhite;
+    position: relative;
+}
+
+.product-display .full-img img {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: auto;
+    object-fit: contain;
+}
+
+.product-display h5 {
+    margin: 0;
+}
+
+.product-display .review-section i {
+    color: rgb(252, 108, 24);
+    font-size: 11px;
+}
+
+.product-display .review-section span {
+    font-size: 12px;
+}
+
+.product-display .price {
+    margin-top: 10px;
+}
+
+.product-display .price h6 {
+    font-size: 16px;
+}
+
+.product-display .price .new {
+    color: rgb(252, 108, 24);
+}
+
+.product-display .description {
+    font-size: 15px;
+    padding: 15px 0px;
+}
+
+.product-display .weight {
+    margin-bottom: 35px;
+}
+
+.product-display .weight h6 {
+    font-size: 16px;
+    opacity: .9;
+    padding-bottom: 10px;
+}
+
+.product-display .weight span {
+    font-size: 14px;
+    border: 1px solid rgb(252, 240, 240);
+    padding: 7px 12px;
+    background-color: rgb(252, 240, 240);
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.product-display .myBtn {
+    width: 130px;
+}
+
+.category h6 {
+    display: inline-block;
+    font-size: 15px;
+    opacity: .9;
+}
+
+.category span {
+    padding-left: 8px;
+    font-size: 14px;
+    opacity: .9;
+}

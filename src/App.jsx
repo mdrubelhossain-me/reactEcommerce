@@ -22,7 +22,7 @@ function App() {
           <Route path="/fruits" element={<ShopCategory banner={fBanner} category="fruits" />}></Route>
           <Route path="/vegetables" element={<ShopCategory banner={vBanner} category="vegetables" />}></Route>
           <Route path="/product" element={<Product/>}>
-              <Route path=":productId"  element={<Product/>} />
+              <Route path=":id"  element={<Product/>} />
           </Route>
           <Route path="/cart" element={<Cart/>}></Route>
           <Route path="/login" element={<LoginSignup/>} ></Route>

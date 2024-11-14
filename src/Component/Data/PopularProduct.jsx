@@ -17,7 +17,7 @@ const popularProducts = [
     oldPrice: 120.0,
   },
   {
-    id: 2,
+    id: 8,
     imgSrc: p2,
     name: "Juicy Oranges - Sweet, Tangy, and Full of Vitamin C",
     category: "fruits",
@@ -25,7 +25,7 @@ const popularProducts = [
     oldPrice: 110.0,
   },
   {
-    id: 3,
+    id: 4,
     imgSrc: p3,
     name: "Sweet, Juicy Grapes - Nature's Perfect Bite-Sized Delight",
     category: "fruits",
@@ -33,7 +33,7 @@ const popularProducts = [
     oldPrice: 310.0,
   },
   {
-    id: 4,
+    id: 14,
     imgSrc: p4,
     name: "Cool Watermelon - Perfect for Summer's Sweetest Moments",
     category: "vegetables",
