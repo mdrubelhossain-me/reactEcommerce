@@ -26,63 +26,72 @@ const LoginSignup = () => {
                   MyShop <i className="bi bi-basket"></i>
                 </Link>
               </div>
-              <div className="mb-3 text-center">
-                <p>
-                  Please Login, or{" "}
-                  <Link
-                    to="/registration"
-                    style={{ color: "rgba(255, 128, 70)" }}
-                  >
-                    Signup
-                  </Link>
-                </p>
-              </div>
-              <form>
-                <div className="mb-3">
-                  <label className="form-label">Email address</label>
-                  <input type="email" className="form-control" required />
-                </div>
-                <div className="mb-3">
-                  <label className="form-label">Enter password</label>
-                  <div className="input-group">
-                    <input
-                      type="password"
-                      className="form-control"
-                      id="password"
-                      required
-                    />
-                    <div className="input-group-append">
-                      <button
-                        type="button"
-                        className="password-show-icon"
-                        onClick={togglePassword}
-                        aria-label="Toggle password visibility"
-                      >
-                        <i id="password-show-icon" className="bi bi-eye"></i>
-                      </button>
+
+              <div className="mt-5">
+                <form>
+                  <div className="mb-3">
+                    <label className="form-label">Your Name</label>
+                    <input type="text" className="form-control" required />
+                  </div>
+                  <div className="mb-3">
+                    <label className="form-label">Email address</label>
+                    <input type="email" className="form-control" required />
+                  </div>
+                  <div className="mb-3">
+                    <label className="form-label">Enter password</label>
+                    <div className="input-group">
+                      <input
+                        type="password"
+                        className="form-control"
+                        id="password"
+                        required
+                      />
+                      <div className="input-group-append">
+                        <button
+                          type="button"
+                          className="password-show-icon"
+                          onClick={togglePassword}
+                          aria-label="Toggle password visibility"
+                        >
+                          <i id="password-show-icon" className="bi bi-eye"></i>
+                        </button>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="mb-3 d-flex justify-content-between">
-                  <Link to="/registration" className="d-block link">
-                    Create an Account
-                  </Link>
-                  <Link to="/forgot-password" className="d-block link">
-                    Forgot Password?
-                  </Link>
-                </div>
-                <div className="mb-3">
-                  <div className="form-check">
-                    <input className="form-check-input" type="checkbox" />
-                    <label className="form-check-label">Remember me</label>
+
+                  <div className="mb-3">
+                    <button
+                      type="submit"
+                      className="myBtn w-100 rounded-25 m-0"
+                    >
+                      Continue
+                    </button>
                   </div>
-                </div>
-                <div className="mb-3">
-                  <button type="submit" className="myBtn">
-                    Login
-                  </button>
-                </div>
-              </form>
+                  <div className="mb-3 text-center">
+                    <p>
+                      Already have an account?
+                      <Link
+                        className="mx-2"
+                        to=""
+                        style={{ color: "rgba(255, 128, 70)" }}
+                      >
+                        Login here
+                      </Link>
+                    </p>
+                  </div>
+                  <div className="mb-3">
+                    <div className="form-check">
+                      <input
+                        className="form-check-input mt-1"
+                        type="checkbox"
+                      />
+                      <label className="form-check-label">
+                        By continuing, I agree to terms of use & privacy policy
+                      </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>

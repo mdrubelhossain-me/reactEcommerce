@@ -4,7 +4,7 @@
 .login-section .login-form-body {
     padding: 35px 30px 25px 30px;
     background-color: white;
-    border: 1px solid rgb(252, 230, 209);
+    border: none;
     font-family: "Josefin Sans", sans-serif;
     border-radius: 6px;
 
@@ -82,6 +82,10 @@
 
 .form-control{
     padding-right: 32px!important;
+}
+
+.login-section .login-form-body form  p{
+    font-size: 14px;
 }
 
 
