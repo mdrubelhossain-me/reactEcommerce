@@ -16,7 +16,7 @@ const Offers = () => {
               Exclusive <br /> Offer For You
             </h1>
             <div>
-              <Link className="myBtn">
+              <Link className="myBtn m-0">
                 Check Now <i className="bi bi-arrow-right"></i>
               </Link>
             </div>
