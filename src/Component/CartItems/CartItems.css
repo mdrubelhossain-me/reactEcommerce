@@ -22,3 +22,24 @@
     background: none;
     color: rgb(255, 128, 70);
 }
+
+
+.product-cart form label{
+    font-size: 15px;
+}
+.product-cart form input{
+    font-size: 15px;
+}
+.product-cart p{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 4px;
+    font-size: 15px;
+}
+
+
+@media (max-width: 768px) {
+    .product-cart .myBtn{
+        width: 100%;
+    }
+}
