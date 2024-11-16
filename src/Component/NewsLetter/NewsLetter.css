@@ -57,12 +57,7 @@
         padding-left: 30px;
         padding-right: 30px;
     }
-
-    form input {
-        width: 300px !important;
-    }
-
-    form button {
-        width: 100px !important;
+    form  {
+        width: 70% !important;
     }
 }
