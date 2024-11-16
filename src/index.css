@@ -38,3 +38,10 @@ body {
     color: rgb(252, 108, 24);
     transition: .6s ease;
 }
+
+
+@media (max-width: 768px){
+    html{
+        overflow-x: hidden;
+    }
+}
