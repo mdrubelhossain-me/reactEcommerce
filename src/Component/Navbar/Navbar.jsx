@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { ShopContext } from "../../Context/ShopContext";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,6 +9,9 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const { getTotalCartQuantity } = useContext(ShopContext);
+  const totalQuantity = getTotalCartQuantity();
 
   return (
     <div>
@@ -63,14 +67,14 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="btn-cart">
-                <Link to="/cart">
-                  <button type="button" class="nav-link position-relative">
-                    <i className="bi bi-cart"></i>
-                    <span class="position-absolute top-10 start-100 translate-middle badge rounded-pill bg-danger">
-                      0
-                    </span>
-                  </button>
-                </Link>
+              <Link to="/cart">
+            <button type="button" className="nav-link position-relative">
+                <i className="bi bi-cart"></i>
+                <span className="position-absolute top-10 start-100 translate-middle badge rounded-pill bg-danger">
+                    {totalQuantity}
+                </span>
+            </button>
+        </Link>
               </li>
             </ul>
           </div>

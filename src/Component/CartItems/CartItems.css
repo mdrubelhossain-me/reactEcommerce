@@ -1,0 +1,15 @@
+
+.product-cart {
+    font-family: "Josefin Sans", sans-serif;
+}
+.product-cart table tr td img{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+.product-cart table thead th {
+    font-size: 15px;
+}
+.product-cart table tr td {
+    font-size: 14px;
+}
