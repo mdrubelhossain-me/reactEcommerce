@@ -1,0 +1,11 @@
+.descritption-box {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.descritption-box h6{
+    font-size: 16px;
+}
+.descritption-box p{
+    text-align: justify;
+    font-size: 14px;
+}
