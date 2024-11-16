@@ -28,12 +28,19 @@ const ShopContextProvider = (props) => {
   };
 
   const getTotalCartQuantity = () => {
-    return Object.values(cartItem).reduce((total, quantity) => total + quantity, 0);
-};
+    return Object.values(cartItem).reduce(
+      (total, quantity) => total + quantity,
+      0
+    );
+  };
 
-
-
-  const contextValue = { productsData, cartItem, addToCart, removeFromCart,getTotalCartQuantity };
+  const contextValue = {
+    productsData,
+    cartItem,
+    addToCart,
+    removeFromCart,
+    getTotalCartQuantity,
+  };
 
   return (
     <ShopContext.Provider value={contextValue}>

@@ -67,14 +67,14 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="btn-cart">
-              <Link to="/cart">
-            <button type="button" className="nav-link position-relative">
-                <i className="bi bi-cart"></i>
-                <span className="position-absolute top-10 start-100 translate-middle badge rounded-pill bg-danger">
-                    {totalQuantity}
-                </span>
-            </button>
-        </Link>
+                <Link to="/cart">
+                  <button type="button" className="nav-link position-relative">
+                    <i className="bi bi-cart"></i>
+                    <span className="position-absolute top-10 start-100 translate-middle badge rounded-pill bg-danger">
+                      {totalQuantity}
+                    </span>
+                  </button>
+                </Link>
               </li>
             </ul>
           </div>
