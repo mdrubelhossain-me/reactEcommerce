@@ -3,19 +3,18 @@ import "./CartItems.css";
 import { ShopContext } from "../../Context/ShopContext";
 
 const CartItems = () => {
-  const { productsData, cartItem, removeFromCart } = useContext(ShopContext);
-
-  // Calculate subtotal
-  const calculateSubtotal = () => {
-    return productsData.reduce((subtotal, product) => {
-      const quantity = cartItem[product.id] || 0;
-      return subtotal + product.newPrice * quantity;
-    }, 0);
-  };
+  const {
+    productsData,
+    cartItem,
+    addToCart,
+    removeFromCart,
+    calculateSubtotal,
+    calculateTotal,
+  } = useContext(ShopContext);
 
   const subtotal = calculateSubtotal();
-  const shippingFee = 0; // Update this if shipping fee is dynamic
-  const total = subtotal + shippingFee;
+  const shippingFee = 0; // Set your shipping fee here
+  const total = calculateTotal(shippingFee);
 
   return (
     <div className="container pt-5 pb-5">
@@ -27,7 +26,7 @@ const CartItems = () => {
                 <th className="text-center">Products</th>
                 <th>Name</th>
                 <th>Price</th>
-                <th>Quantity</th>
+                <th className="text-center">Quantity</th>
                 <th>Total</th>
                 <th className="text-center">Remove</th>
               </tr>
@@ -46,14 +45,33 @@ const CartItems = () => {
                       </td>
                       <td>{product.name}</td>
                       <td>${product.newPrice.toFixed(2)}</td>
-                      <td>{cartItem[product.id]}</td>
+                      <td className="text-center">
+                        <div className="d-flex justify-content-center align-items-center ">
+                          <button
+                            className="btn btn-dark btn-sm"
+                            onClick={() => removeFromCart(product.id)}
+                          >
+                            -
+                          </button>
+                          <span className="qty-show px-3 border">
+                            {cartItem[product.id]}
+                          </span>
+                          <button
+                            className="btn btn-dark btn-sm"
+                            onClick={() => addToCart(product.id)}
+                          >
+                            +
+                          </button>
+                        </div>
+                      </td>
                       <td>
-                        ${(product.newPrice * cartItem[product.id]).toFixed(2)}
+                        $ {(product.newPrice * cartItem[product.id]).toFixed(2)}
                       </td>
                       <td className="text-center">
                         <button
-                          onClick={() => removeFromCart(product.id)}
+                          onClick={() => removeFromCart(product.id, true)} // Fully remove item
                           title="Delete"
+                          className="btn btn-outline-danger btn-sm"
                         >
                           <i className="bi bi-trash"></i>
                         </button>

@@ -17,29 +17,46 @@
 .product-cart table tr td {
     font-size: 14px;
 }
-.product-cart table tr td  button{
+
+.product-cart table tr td button {
     border: none;
     background: none;
     color: rgb(255, 128, 70);
 }
 
 
-.product-cart form label{
+.product-cart form label {
     font-size: 15px;
 }
-.product-cart form input{
+
+.product-cart form input {
     font-size: 15px;
 }
-.product-cart p{
+
+.product-cart p {
     margin: 0;
     padding: 0;
     padding-bottom: 4px;
     font-size: 15px;
 }
 
+.product-cart .btn-dark {
+    background-color: rgb(255, 128, 70) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 0px !important;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.product-cart .qty-show {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
 
 @media (max-width: 768px) {
-    .product-cart .myBtn{
+    .product-cart .myBtn {
         width: 100%;
     }
 }

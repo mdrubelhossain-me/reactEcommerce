@@ -17,14 +17,22 @@ const ShopContextProvider = (props) => {
 
   const addToCart = (itemId) => {
     setCartItems((prev) => {
-      console.log("Adding to cart:", itemId);
-      console.log("Previous cart state:", prev);
-      return { ...prev, [itemId]: prev[itemId] + 1 };
+      const updatedCart = { ...prev, [itemId]: prev[itemId] + 1 };
+      console.log("Add to Cart - Updated Cart:", updatedCart);
+      return updatedCart;
     });
   };
 
-  const removeFromCart = (itemId) => {
-    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
+  const removeFromCart = (itemId, removeCompletely = false) => {
+    setCartItems((prev) => {
+      const updatedCart = { ...prev };
+      if (removeCompletely) {
+        delete updatedCart[itemId]; // Remove the item entirely
+      } else if (updatedCart[itemId] > 0) {
+        updatedCart[itemId] -= 1; // Decrease quantity by 1
+      }
+      return updatedCart;
+    });
   };
 
   const getTotalCartQuantity = () => {
@@ -34,12 +42,25 @@ const ShopContextProvider = (props) => {
     );
   };
 
+  const calculateSubtotal = () => {
+    return productsData.reduce((subtotal, product) => {
+      const quantity = cartItem[product.id] || 0;
+      return subtotal + product.newPrice * quantity;
+    }, 0);
+  };
+
+  const calculateTotal = (shippingFee = 0) => {
+    return calculateSubtotal() + shippingFee;
+  };
+
   const contextValue = {
     productsData,
     cartItem,
     addToCart,
     removeFromCart,
     getTotalCartQuantity,
+    calculateSubtotal,
+    calculateTotal,
   };
 
   return (
@@ -50,16 +71,3 @@ const ShopContextProvider = (props) => {
 };
 
 export default ShopContextProvider;
-
-// Same Work
-// export const ShopContext = createContext();
-
-// const ShopProvider = ({ children }) => {
-//     return (
-//         <ShopContext.Provider value={{ productsData }}>
-//             {children}
-//         </ShopContext.Provider>
-//     );
-// };
-
-// export default ShopProvider;
